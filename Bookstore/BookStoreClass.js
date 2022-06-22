@@ -25,4 +25,6 @@ class Book{
 
 B2 = new Book('ABC', 'xyz', 625382, 8)
 B2.reStock(2)
-console.log(B2.availability);
+// console.log(B2.availability);
+
+module.exports = Book;
