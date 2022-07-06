@@ -5,7 +5,7 @@ var search = function(nums, target) {
     if (nums[nums.length-1] === target) return nums.length-1
     
     let leftIndex = 0, rightIndex = nums.length-1
-    while (leftIndex <= rightIndex && rightIndex-leftIndex > 1){
+    while (leftIndex < rightIndex && rightIndex-leftIndex > 1){
         let midIndex = Math.floor((rightIndex+leftIndex)/2)
         if (nums[midIndex] === target) return midIndex
         else if (nums[midIndex] > target) rightIndex = midIndex
